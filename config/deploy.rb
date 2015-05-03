@@ -24,7 +24,7 @@ namespace :deploy do
     on roles(:app) do
       with fetch(:git_environmental_variables) do
         within release_path do
-          execute :npm, 'install'
+          execute :npm, 'install --production'
           execute :grunt, 'init'
           execute :grunt, 'prod'
         end
