@@ -24,6 +24,10 @@ namespace :deploy do
     on roles(:app) do
       with fetch(:git_environmental_variables) do
         within release_path do
+          # Load nvm
+          execute :export, 'NVM_DIR=~/.nvm'
+          execute :source. '~/.nvm/nvm.sh'
+          # Install dependencies
           execute :npm, 'install'
           execute :grunt, 'init'
           execute :grunt, 'prod'
