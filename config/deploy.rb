@@ -26,7 +26,7 @@ namespace :deploy do
         within release_path do
           # Load nvm
           execute :export, 'NVM_DIR=~/.nvm'
-          execute :source. '~/.nvm/nvm.sh'
+          execute :source, '~/.nvm/nvm.sh'
           # Install dependencies
           execute :npm, 'install'
           execute :grunt, 'init'
