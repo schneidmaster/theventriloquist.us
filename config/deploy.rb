@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'theventriloquist.us'
-set :repo_url, 'git@code.schneidmaster.com:ventriloquist/web.git'
+set :repo_url, 'git@github.com:schneidmaster/theventriloquist.us.git'
 
 # Default branch is :master
 set :branch, 'stable-production'
