@@ -4,4 +4,4 @@
 
 [submodule "content/themes/quarter"]
   path = content/themes/quarter
-  url = git@code.schneidmaster.com:ventriloquist/quarter.git
+  url = https://github.com/schneidmaster/quarter.git
